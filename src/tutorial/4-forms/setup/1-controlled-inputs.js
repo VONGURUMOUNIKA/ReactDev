@@ -24,7 +24,10 @@ const ControlledInputs = () => {
 
       setPeople((people) => {
         return [... people,person];
-      })
+      });
+      setFirstName('');
+      setEmail('');
+
     } else {
       console.log("empty value(s)");
     }
@@ -62,7 +65,12 @@ const ControlledInputs = () => {
         
         {people.map((person)=>{
           const {id,firstName,email} = person;
-          return ""
+          return (
+            <div className='item' key={id}>
+              <h4>{firstName}</h4>
+              <p>{email}</p>
+            </div>
+          );
         })}
       </article>
    
