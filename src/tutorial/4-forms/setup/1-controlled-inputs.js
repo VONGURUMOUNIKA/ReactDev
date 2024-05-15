@@ -1,3 +1,6 @@
+// Author: Mounika
+// Date: 05/15/2024
+
 import React, { useState } from 'react';
 // In JS
 // const input = document.getElementById('myText');
@@ -59,7 +62,7 @@ const ControlledInputs = () => {
         
         {people.map((person)=>{
           const {id,firstName,email} = person;
-          return
+          return ""
         })}
       </article>
    
